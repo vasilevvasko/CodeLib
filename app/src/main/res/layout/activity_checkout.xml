@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CheckoutActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shipping Information"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/textView1"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:hint="Name"
+        android:text="Vasko"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/nameEditText"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/surnameEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nameEditText"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="10dp"
+        android:hint="Surname"
+        android:text="Vasilev"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Address"
+        android:text="Svoboda Bachvarova 4"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/apartmentEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Apartment, suite, etc. (optional)"
+        android:text="Skaptopara 1, 1218"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apartmentEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="City"
+        android:text="Blagoevgrad"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/regionEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Country"
+        android:text="Bulgaria"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/postalCodeEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/regionEditText"
+        android:layout_below="@id/cityEditText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Postal Code"
+        android:text="2700"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Information"
+        android:textSize="20dp"
+        android:layout_below="@id/regionEditText"
+        android:layout_margin="20dp"
+        android:id="@+id/textView2"
+        />
+
+    <EditText
+        android:id="@+id/cardEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="10dp"
+        android:hint="Card Number"
+        android:text="4228185962887110"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/cardNameEditText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardEditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Vasko Vasilev"
+        android:background="@color/colorAccent"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/cardExpirationDateEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNameEditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="04/2023"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/cardSecurityCodeEditText"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNameEditText"
+        android:layout_toRightOf="@+id/cardExpirationDateEditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="365"
+        android:background="@color/colorAccent"
+        android:padding="5dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "484426261428",
+    "firebase_url": "https://inf-final-project.firebaseio.com",
+    "project_id": "inf-final-project",
+    "storage_bucket": "inf-final-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:484426261428:android:64fb1fb82b347b8c1b88e1",
+        "android_client_info": {
+          "package_name": "com.example.pogolemotoproektce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "484426261428-a955u8dbns2vfm3c6624mn4aafhb0et2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pogolemotoproektce",
+            "certificate_hash": "db27b79e6980da906c10fa2912ceb19776f69a6a"
+          }
+        },
+        {
+          "client_id": "484426261428-amooov3ksjj61qrjv2t5qk0v2s36ne03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa-jfs74sMCUOewxKQLdG-tk9TSsTsrPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "484426261428-amooov3ksjj61qrjv2t5qk0v2s36ne03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

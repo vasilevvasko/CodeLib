@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="200px"
+    android:layout_height="320px"
+    android:gravity="center"
+    android:layout_margin="2dp"
+    android:id="@+id/parent_layout"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:padding="2dp"
+        tools:src="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"/>
+
+
+
+    <TextView
+        android:id="@+id/caption"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Caption of the Book"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="6sp"
+        android:singleLine="true"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="2dp"
+        android:layout_below="@+id/image"/>
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Author of the Book"
+        android:textAlignment="viewStart"
+        android:textColor="#000000"
+        android:textSize="6sp"
+        android:singleLine="true"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="2dp"
+        android:layout_below="@+id/caption"/>
+
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:text="Price of the Book"
+        android:textAlignment="viewEnd"
+        android:textColor="#000000"
+        android:textSize="6sp"
+        android:paddingBottom="1dp"
+        android:singleLine="true"
+        android:background="@color/colorPrimary"
+        android:paddingRight="2dp"
+        android:layout_below="@+id/autor"/>
+
+</RelativeLayout>

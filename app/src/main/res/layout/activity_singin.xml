@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SinginActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstHalf"
+            android:background="@color/colorPrimaryDark"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sing in "
+                android:id="@+id/SingInTextView"
+                android:textStyle="bold"
+                android:textSize="45dp"
+                android:textAlignment="center"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/SingInTextView"
+                android:id="@+id/SingInEmailEditText"
+                android:singleLine="true"
+                android:paddingTop="20dp"
+                android:hint="Email"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/SingInEmailEditText"
+                android:id="@+id/SingInPasswordEditText"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:paddingTop="40dp"
+                android:hint="Password"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/SingInButton"
+                android:layout_below="@+id/SingInPasswordEditText"
+                android:layout_centerHorizontal="true"
+                android:text="Sing In"
+                android:background="@drawable/buttonshpae"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstHalf"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:id="@+id/CreateAccountTextView"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="45dp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/CreateAccountTextView"
+                android:id="@+id/CreateAccountEmailEditText"
+                android:singleLine="true"
+                android:paddingTop="40dp"
+                android:hint="Email"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/CreateAccountEmailEditText"
+                android:id="@+id/CreateAccountPasswordEditText"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:paddingTop="40dp"
+                android:hint="Password"
+
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/CreateAccountButton"
+                android:layout_below="@+id/CreateAccountPasswordEditText"
+                android:layout_centerHorizontal="true"
+                android:text="Register"
+                android:background="@drawable/buttonshpae"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:elevation="7dp"
+        />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
